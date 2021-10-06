@@ -36,15 +36,21 @@ Code Examples :
 
 
 
-  Query Parameters 
+## Query Parameters 
 
   
 
 
 
-  Responses
+  ## Responses
 
   ![alt text](https://github.com/rafiquecudjoe/link_unfurling_api/blob/main/response.png?raw=true)
 
+
+## Status and Errors
+
+Status 200 = Success
+
+Status 400 = Invalid URL
 
 
