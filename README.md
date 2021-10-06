@@ -44,7 +44,7 @@ Code Examples :
 
   Responses
 
-  ![alt text](https://github.com/rafiquecdujoe/link_unfurling_api/blob/main/response.png?raw=true)
+  ![alt text](https://github.com/rafiquecudjoe/link_unfurling_api/blob/main/response.png?raw=true)
 
 
 
