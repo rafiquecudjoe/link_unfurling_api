@@ -24,7 +24,7 @@ export default async function handler(req, res) {
         title: title,
         favicon: icon,
         description: description,
-        id: 1
+        id: 3
       },
       
      
