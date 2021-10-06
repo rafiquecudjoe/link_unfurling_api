@@ -32,7 +32,7 @@
 
 Code Examples :
 
-  https://localhost:3000/api/parse?url=http://localhost:3000/api/parse?url=https://nextjs.org/docs/api-routes/dynamic-api-routes
+ https://localhost:3000/api/parse?url=https://nextjs.org/docs/api-routes/dynamic-api-routes
 
 
 

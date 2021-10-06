@@ -1,12 +1,16 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "mysql"
   url      = env("DATABASE_URL")
 }
 
-generator client {
-  provider = "prisma-client-js"
+model sitepreview {
+  id          Int    @id
+  url         String @unique(map: "url") @db.Char(20)
+  title       String @db.Char(20)
+  favicon     String @db.Char(20)
+  description String @db.Char(20)
 }
-
