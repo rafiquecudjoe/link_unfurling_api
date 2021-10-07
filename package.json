@@ -11,6 +11,11 @@
   "dependencies": {
     "@prisma/client": "^3.2.0",
     "metadata-scraper": "^0.2.42",
+    "metascraper": "^5.24.8",
+    "metascraper-description": "^5.24.8",
+    "metascraper-image": "^5.24.8",
+    "metascraper-logo-favicon": "^5.24.8",
+    "metascraper-title": "^5.24.8",
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2"

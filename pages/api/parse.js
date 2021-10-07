@@ -9,33 +9,39 @@ export default async function handler(req, res) {
 
   const url = query.url;
 
-  const sitep = await prisma.sitepreview.findUnique({
+  const sitep = await prisma.webPreview.findUnique({
     where: {
       url: url,
     },
   });
 
   if (!sitep) {
+    console.log('HIiii')
     const data = await getMetaData(url);
+    console.log(data)
     const { title, icon, description } = data;
-    const sitep2 = await prisma.sitepreview.create({
+    const sitep2 = await prisma.webPreview.create({
       data: {
         url: url,
         title: title,
         favicon: icon,
         description: description,
-        id: 3
       },
-      
-     
     });
-    res.status(200).send({ title: title, favicon: icon, description: description })
-    if (!sitep2) throw new Error("Database Error")
+    res
+      .status(200)
+      .send({ title: title, favicon: icon, description: description });
+    if (!sitep2) throw new Error("Database Error");
   } else {
-    const {url, title, favicon, description
-  } = sitep
+    const {title, favicon, description } = sitep;
 
-res.status(200).send({url:url,title:title,description:description,icon:favicon})
-    
+    res
+      .status(200)
+      .send({
+        title: title,
+        favicon: favicon,
+        description: description,
+        
+      });
   }
 }
