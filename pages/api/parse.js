@@ -16,9 +16,7 @@ export default async function handler(req, res) {
   });
 
   if (!sitep) {
-    console.log('HIiii')
     const data = await getMetaData(url);
-    console.log(data)
     const { title, icon, description } = data;
     const sitep2 = await prisma.webPreview.create({
       data: {
