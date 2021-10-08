@@ -3,6 +3,12 @@
   Site-Preview-API
 </h1>
 
+<p> Site Preview API is a link unfurling API that returns metadata of a website . The endpoint returns a parsed version of the html content of the url parsed and returns it in the form of a JSON Object  </p>
+
+## Frameworks used for the API
+Nest JS https://nestjs.com/
+Prisma database orm https://www.prisma.io/
+
 
 ## 🛠 Installation & Set Up
 
@@ -30,7 +36,12 @@
   GET   hhtps://localhost:3000/api/parse:url
    ```
 
-Code Examples :
+## API Call
+
+https://localhost:3000/api/parse?url={url of website}
+
+
+## Code Examples :
 
  https://localhost:3000/api/parse?url=https://nextjs.org/docs/api-routes/dynamic-api-routes
 
@@ -38,7 +49,7 @@ Code Examples :
 
 ## Query Parameters 
 
-  
+url -  required  - This is the url that will be parsed to get the metadata with includes title,description and favicon of the website
 
 
 
@@ -51,6 +62,6 @@ Code Examples :
 
 Status 200 = Success
 
-Status 400 = Invalid URL
+Status 500 = Server Error
 
 
