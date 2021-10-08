@@ -2,7 +2,7 @@
 const getMetaData = require("metadata-scraper");      //imports the metadata-scrapper package
 const { PrismaClient } = require("@prisma/client");  //imports Prisma client to Route
 
-const prisma = new PrismaClient();     //instantiates the Prima Client
+const prisma = new PrismaClient();     //instantiates the Prisma Client
 
 
 // API Route
