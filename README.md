@@ -33,7 +33,7 @@ Prisma database orm https://www.prisma.io/
 ## Endpoints 
 
  ```sh
-  GET   htps://localhost:3000/api/parse:url
+  GET   https://localhost:3000/api/parse:url
    ```
 
 ## API Call
@@ -63,5 +63,7 @@ url -  required  - This is the url that will be parsed to get the metadata with 
 Status 200 = Success
 
 Status 500 = Server Error
+
+Response code 999 = (Request denied)
 
 
