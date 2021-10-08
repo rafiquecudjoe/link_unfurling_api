@@ -6,7 +6,7 @@
 <p> Site Preview API is a link unfurling API that returns metadata of a website . The endpoint returns a parsed version of the html content of the url parsed and returns it in the form of a JSON Object  </p>
 
 ## Frameworks used for the API
-Nest JS https://nestjs.com/
+Nest JS https://nestjs.com/ </br>
 Prisma database orm https://www.prisma.io/
 
 
@@ -33,7 +33,7 @@ Prisma database orm https://www.prisma.io/
 ## Endpoints 
 
  ```sh
-  GET   hhtps://localhost:3000/api/parse:url
+  GET   htps://localhost:3000/api/parse:url
    ```
 
 ## API Call
